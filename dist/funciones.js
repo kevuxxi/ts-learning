@@ -24,4 +24,12 @@ function obtenerUsuario(param) {
 }
 console.log(obtenerUsuario(1));
 console.log(obtenerUsuario("kevin@pf.com"));
+function log(valor) {
+    if (typeof valor === "string")
+        console.log(`📘 Info: ${valor}`);
+    else
+        console.error(`❌ Error: ${valor.message}`);
+}
+log("Servidor iniciado correctamente");
+log(new Error("Error de conexión"));
 //# sourceMappingURL=funciones.js.map
